@@ -138,7 +138,7 @@
             socket.emit("send_message", message.value);
         });
 
-        socket.on("onlineUsers", (users) => {
+         socket.on("onlineUsers", (users) => {
             onlineUsers.innerHTML = "";
             for (const key in users) {
                 let li = document.createElement("li");
